@@ -22,13 +22,15 @@ export const OrganizationProjects: React.FC<OrganizationProjectsProps> = ({
 }) => {
   return (
     <S.OrganizationProjectContainer>
-      <S.OrganizationInfoContainer>
-        <S.OrganizationName>{name}</S.OrganizationName>
-        <S.OrganizationPosition>{position}</S.OrganizationPosition>
-        <S.OrganizationDate>
-          {startAt} ~ {finishAt}
-        </S.OrganizationDate>
-      </S.OrganizationInfoContainer>
+      <S.OrganizationInfoWrapper>
+        <S.OrganizationInfoContainer>
+          <S.OrganizationName>{name}</S.OrganizationName>
+          <S.OrganizationPosition>{position}</S.OrganizationPosition>
+          <S.OrganizationDate>
+            {startAt} ~ {finishAt}
+          </S.OrganizationDate>
+        </S.OrganizationInfoContainer>
+      </S.OrganizationInfoWrapper>
       <S.OrganizationRowContainer>
         {projects.map((props, i) => (
           <Project key={i} {...props} />

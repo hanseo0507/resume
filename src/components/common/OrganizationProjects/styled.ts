@@ -4,9 +4,18 @@ export const OrganizationProjectContainer = styled.div`
   display: flex;
 `;
 
-export const OrganizationInfoContainer = styled.div`
-  max-width: 20rem;
+export const OrganizationInfoWrapper = styled.div`
+  max-width: 22rem;
   width: 100%;
+  display: flex;
+  position: relative;
+`;
+
+export const OrganizationInfoContainer = styled.div`
+  width: 100%;
+  height: fit-content;
+  top: 3.6rem;
+  position: sticky;
 `;
 
 export const OrganizationRowContainer = styled.div`
