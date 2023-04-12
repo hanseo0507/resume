@@ -37,4 +37,8 @@ export const globalStyle = css`
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
     letter-spacing: -0.03em;
   }
+
+  p {
+    margin: 0;
+  }
 `;
