@@ -2,6 +2,12 @@ import styled from '@emotion/styled';
 
 export const IntroduceSection = styled.section`
   padding: 4.8rem 0;
+
+  @media screen and (max-width: 680px) {
+    br {
+      display: none;
+    }
+  }
 `;
 
 export const SectionTitle = styled.h1`

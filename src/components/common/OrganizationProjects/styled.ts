@@ -2,6 +2,11 @@ import styled from '@emotion/styled';
 
 export const OrganizationProjectContainer = styled.div`
   display: flex;
+
+  @media screen and (max-width: 680px) {
+    flex-direction: column;
+    gap: 5.2rem;
+  }
 `;
 
 export const OrganizationInfoWrapper = styled.div`
@@ -9,6 +14,10 @@ export const OrganizationInfoWrapper = styled.div`
   width: 100%;
   display: flex;
   position: relative;
+
+  @media screen and (max-width: 680px) {
+    max-width: 100%;
+  }
 `;
 
 export const OrganizationInfoContainer = styled.div`
@@ -16,6 +25,13 @@ export const OrganizationInfoContainer = styled.div`
   height: fit-content;
   top: 3.6rem;
   position: sticky;
+
+  @media screen and (max-width: 680px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+  }
 `;
 
 export const OrganizationRowContainer = styled.div`

@@ -20,7 +20,7 @@ export const globalStyle = css`
   }
 
   #___gatsby {
-    max-width: 760px;
+    max-width: 750px;
     margin: 0 auto;
   }
 
@@ -41,5 +41,12 @@ export const globalStyle = css`
 
   p {
     margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 8px;
+      padding: 0 4rem;
+    }
   }
 `;

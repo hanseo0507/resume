@@ -4,6 +4,10 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
+
+  @media screen and (max-width: 680px) {
+    gap: 2.4rem;
+  }
 `;
 
 export const ProjectNameColumn = styled.div`
@@ -28,6 +32,10 @@ export const ProjectIconList = styled.div`
 export const ProjectName = styled.h4`
   font-size: 3.2rem;
   margin: 0 0 0.4rem 0;
+
+  @media screen and (max-width: 680px) {
+    font-size: 2.8rem;
+  }
 `;
 
 export const ProjectDescription = styled.p`

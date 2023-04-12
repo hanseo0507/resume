@@ -25,10 +25,12 @@ export const OrganizationProjects: React.FC<OrganizationProjectsProps> = ({
       <S.OrganizationInfoWrapper>
         <S.OrganizationInfoContainer>
           <S.OrganizationName>{name}</S.OrganizationName>
-          <S.OrganizationPosition>{position}</S.OrganizationPosition>
-          <S.OrganizationDate>
-            {startAt} ~ {finishAt}
-          </S.OrganizationDate>
+          <div>
+            <S.OrganizationPosition>{position}</S.OrganizationPosition>
+            <S.OrganizationDate>
+              {startAt} ~ {finishAt}
+            </S.OrganizationDate>
+          </div>
         </S.OrganizationInfoContainer>
       </S.OrganizationInfoWrapper>
       <S.OrganizationRowContainer>
