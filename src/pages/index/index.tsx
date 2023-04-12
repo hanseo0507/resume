@@ -1,10 +1,11 @@
-import React from "react";
-import { HeadFC, PageProps } from "gatsby";
+import React from 'react';
 
-import * as S from "./styled";
+import { HeadFC, PageProps } from 'gatsby';
+
+import * as S from './styled';
 
 const IndexPage: React.FC<PageProps> = () => {
-	return <div>Hi, I'm HanSu Lee !</div>;
+  return <div>Hi, I'm HanSu Lee !</div>;
 };
 
 export default IndexPage;
