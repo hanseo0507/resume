@@ -1,0 +1,41 @@
+{
+	"name": "@hanseo0507/resume",
+	"version": "1.0.0",
+	"private": true,
+	"repository": "https://github.com/hanseo0507/resume",
+	"author": "HanSu Lee <i.hansu.lee@gmail.com>",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.10.6",
+		"@emotion/styled": "^11.10.6",
+		"gatsby": "^5.8.1",
+		"gatsby-plugin-emotion": "^8.8.0",
+		"gatsby-plugin-google-gtag": "^5.8.0",
+		"gatsby-plugin-image": "^3.8.0",
+		"gatsby-plugin-manifest": "^5.8.0",
+		"gatsby-plugin-page-creator": "^5.8.0",
+		"gatsby-plugin-sharp": "^5.8.1",
+		"gatsby-plugin-sitemap": "^6.8.0",
+		"gatsby-source-filesystem": "^5.8.0",
+		"gatsby-transformer-sharp": "^5.8.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.11",
+		"@types/react": "^18.0.33",
+		"@types/react-dom": "^18.0.11",
+		"gatsby-plugin-tsconfig-paths": "^1.0.6",
+		"typescript": "^5.0.4"
+	}
+}
