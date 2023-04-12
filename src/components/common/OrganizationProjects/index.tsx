@@ -24,13 +24,13 @@ export const OrganizationProjects: React.FC<OrganizationProjectsProps> = ({
     <S.OrganizationProjectContainer>
       <S.OrganizationInfoWrapper>
         <S.OrganizationInfoContainer>
-          <S.OrganizationName>{name}</S.OrganizationName>
           <div>
+            <S.OrganizationName>{name}</S.OrganizationName>
             <S.OrganizationPosition>{position}</S.OrganizationPosition>
-            <S.OrganizationDate>
-              {startAt} ~ {finishAt}
-            </S.OrganizationDate>
           </div>
+          <S.OrganizationDate>
+            {startAt} ~ {finishAt}
+          </S.OrganizationDate>
         </S.OrganizationInfoContainer>
       </S.OrganizationInfoWrapper>
       <S.OrganizationRowContainer>

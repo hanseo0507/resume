@@ -11,7 +11,7 @@ export const IntroduceSection = styled.section`
 `;
 
 export const SectionTitle = styled.h1`
-  font-size: 5.2rem;
+  font-size: 4.8rem;
   font-weight: 800;
   margin: 0;
 `;

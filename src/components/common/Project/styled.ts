@@ -27,6 +27,12 @@ export const ProjectIconList = styled.div`
     color: var(--color-text-primary);
     text-decoration: none;
   }
+
+  @media screen and (max-width: 680px) {
+    svg {
+      font-size: 2.8rem !important;
+    }
+  }
 `;
 
 export const ProjectName = styled.h4`

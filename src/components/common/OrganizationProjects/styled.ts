@@ -30,7 +30,6 @@ export const OrganizationInfoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: right;
   }
 `;
 
@@ -45,6 +44,10 @@ export const OrganizationName = styled.h3`
   font-size: 3.2rem;
   font-weight: 700;
   margin: 0 0 1.6rem 0;
+
+  @media screen and (max-width: 680px) {
+    margin-bottom: 0.4rem;
+  }
 `;
 
 export const OrganizationPosition = styled.p`

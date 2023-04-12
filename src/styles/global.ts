@@ -49,4 +49,10 @@ export const globalStyle = css`
       padding: 0 4rem;
     }
   }
+
+  @media screen and (max-width: 576px) {
+    html {
+      padding: 0 1.2rem;
+    }
+  }
 `;
