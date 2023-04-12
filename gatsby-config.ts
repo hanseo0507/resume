@@ -10,14 +10,14 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    'gatsby-plugin-tsconfig-paths',
-    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: ['G-522BRW2WVG'],
       },
     },
+    'gatsby-plugin-tsconfig-paths',
+    'gatsby-plugin-emotion',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
     {
