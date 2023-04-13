@@ -1,7 +1,7 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-import { OrganizationProjectsProps } from 'src/components/common';
+import { OrganizationProjectsProps, ProjectProps } from 'src/components/common';
 
 export const PROJECTS: OrganizationProjectsProps[] = [
   {
@@ -43,6 +43,23 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         links: [
           { icon: faGithub, link: 'https://github.com/hanowwl/2022-hanseithon-frontend' },
           { icon: faGithub, link: 'https://github.com/hanowwl/2022-hanseithon-backend' },
+        ],
+      },
+    ],
+  },
+  {
+    name: '한세 VPN',
+    position: 'Frontend Developer',
+    startAt: '2022.02',
+    projects: [
+      {
+        name: '한세 VPN v4',
+        description: '누적 트래픽 174TB, 재학생부터 교사까지 사용하는 한세 VPN',
+        startAt: '2022.02',
+        skills: ['TypeScript', 'React.js', 'Monorepo', 'GraphQL', 'Codegen', 'Apollo'],
+        results: [
+          'JavaScript를 TypeScript로 마이그레이션을 진행했습니다',
+          'Storybook 도입으로 컴포넌트를 규격화하고 문서화하였습니다',
         ],
       },
     ],
@@ -119,18 +136,91 @@ export const PROJECTS: OrganizationProjectsProps[] = [
     ],
   },
   {
-    name: '한세 VPN',
-    position: 'Frontend Developer',
-    startAt: '2022.02',
+    name: 'MY-SCHOOL.INFO',
+    position: '',
+    startAt: '2020.11',
     projects: [
       {
-        name: '한세 VPN v4',
-        description: '누적 트래픽 174TB, 재학생부터 교사까지 사용하는 한세 VPN',
-        startAt: '2022.02',
-        skills: ['TypeScript', 'React.js', 'Monorepo', 'GraphQL', 'Codegen', 'Apollo'],
-        results: [
-          'JavaScript를 TypeScript로 마이그레이션을 진행했습니다',
-          'Storybook 도입으로 컴포넌트를 규격화하고 문서화하였습니다',
+        name: 'MY-SCHOOL.INFO (Full-Stack)',
+        description: '컴시간 시간표 서비스의 iOS 이용 불편함을 해결하기 위한 서비스',
+        startAt: '2020.08',
+        finishAt: '2021.03',
+        skills: ['JavaScript(ES6)', 'React.js', 'Bootstrap', 'Express.js', 'AWS Amplify'],
+        results: [],
+        links: [
+          {
+            icon: faGithub,
+            link: 'https://github.com/my-school-info/my-school-info-frontend-v1',
+          },
+        ],
+      },
+      {
+        name: '@my-school.info/neis-api',
+        description: '나이스 오픈 API TypeScript 라이브러리',
+        startAt: '2021.03',
+        finishAt: '2021.03',
+        skills: ['TypeScript', 'Axios'],
+        results: [],
+        links: [
+          {
+            icon: faGithub,
+            link: 'https://github.com/my-school.info',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: '개인 프로젝트',
+    position: '',
+    startAt: '',
+    projects: [
+      {
+        name: '@hanseo0507/react-toast',
+        description: 'React 토스트 라이브러리',
+        startAt: '',
+        skills: ['TypeScript', 'React.js', 'Emotion', 'Framer Motion'],
+        results: [],
+        links: [
+          {
+            icon: faGithub,
+            link: 'https://github.com/hanseo0507/react-toast',
+          },
+        ],
+      },
+      {
+        name: '한세 시간표',
+        description: '코로나 시대의 편리한 줌 수업 참여를 위한 웹서비스',
+        startAt: '',
+        skills: ['TypeScript', 'React.js', 'styled-components', 'Deeplink'],
+        results: [],
+        links: [
+          {
+            icon: faGlobe,
+            link: 'https://hansei-timetable-v1.vercel.app',
+          },
+          {
+            icon: faGithub,
+            link: 'https://github.com/hanseo0507/hansei-timetable',
+          },
+        ],
+      },
+      {
+        name: 'What Is My IP?',
+        description: '본인이 사용 중인 IP와 관련 정보를 안내하는 웹서비스',
+        startAt: '',
+        finishAt: '',
+        skills: ['JavaScript(ES6)', 'React.js'],
+        results: [],
+        links: [
+          {
+            icon: faGlobe,
+            link: 'https://hanseo0507.github.io/What-Is-My-IP/',
+          },
+          {
+            icon: faGithub,
+            link: 'https://github.com/hanseo0507/What-Is-My-IP',
+          },
         ],
       },
     ],
