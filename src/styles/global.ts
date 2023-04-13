@@ -28,6 +28,7 @@ export const globalStyle = css`
   body,
   #___gatsby {
     width: 100%;
+    background-color: white;
   }
 
   #___gatsby {
@@ -41,6 +42,11 @@ export const globalStyle = css`
 
   p {
     margin: 0;
+  }
+
+  ::selection {
+    background-color: #395dff;
+    color: white;
   }
 
   @media screen and (max-width: 768px) {
