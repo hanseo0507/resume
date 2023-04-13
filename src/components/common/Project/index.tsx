@@ -16,6 +16,7 @@ export interface ProjectProps {
   links?: { icon: IconProp; link: string }[];
   skills?: string[];
   results?: React.ReactNode[];
+  images?: string[];
 }
 
 export const Project: React.FC<ProjectProps> = ({
@@ -26,7 +27,10 @@ export const Project: React.FC<ProjectProps> = ({
   links = [],
   skills = [],
   results = [],
+  images = [],
 }) => {
+  const IMG_MAX_RENDER_AMOUNT = 4;
+
   return (
     <S.ProjectContainer>
       <div>
@@ -69,6 +73,23 @@ export const Project: React.FC<ProjectProps> = ({
           </S.ProjectResultList>
         </div>
       )}
+
+      <S.ProjectImagesRow>
+        {images.slice(0, IMG_MAX_RENDER_AMOUNT).map((image, i, arr) => {
+          const isLastItem = arr.length - 1 === i;
+          const isHaveMoreImages = images.length > IMG_MAX_RENDER_AMOUNT;
+          const leftAmount = images.length - IMG_MAX_RENDER_AMOUNT;
+
+          return (
+            <S.ProjectImageWrapper key={i}>
+              <S.ProjectImage src={image} />
+              {isLastItem && isHaveMoreImages && (
+                <S.ProjectImageLeftAmount>+{leftAmount}</S.ProjectImageLeftAmount>
+              )}
+            </S.ProjectImageWrapper>
+          );
+        })}
+      </S.ProjectImagesRow>
     </S.ProjectContainer>
   );
 };

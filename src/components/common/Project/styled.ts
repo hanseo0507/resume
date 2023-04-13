@@ -1,3 +1,5 @@
+import { StaticImage } from 'gatsby-plugin-image';
+
 import styled from '@emotion/styled';
 
 export const ProjectContainer = styled.div`
@@ -67,3 +69,43 @@ export const ProjectResultList = styled.ul`
 `;
 
 export const ProjectResultItem = styled.li``;
+
+export const ProjectImagesRow = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+`;
+
+export const ProjectImageWrapper = styled.div`
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 1.2rem;
+  border: 1px solid #f0eeee;
+  overflow: hidden;
+  cursor: pointer;
+`;
+
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.95);
+  transition: filter 250ms;
+
+  &:hover {
+    filter: brightness(1);
+  }
+`;
+
+export const ProjectImageLeftAmount = styled.p`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+`;
