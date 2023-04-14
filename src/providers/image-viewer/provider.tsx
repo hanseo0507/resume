@@ -1,4 +1,5 @@
-import React, { useCallback, useContext, useEffect, useState } from 'react';
+/* eslint-disable @typescript-eslint/no-empty-function */
+import React, { useContext, useState } from 'react';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -16,7 +17,13 @@ export interface ImageViewerProviderProps {
   children?: React.ReactNode;
 }
 
-export const ImageViewerContext = React.createContext<ImageViewerProviderContext | null>(null);
+export const ImageViewerContext = React.createContext<ImageViewerProviderContext | null>({
+  images: [],
+  showImage: () => {},
+  close: () => {},
+  nextImage: () => {},
+  prevImage: () => {},
+});
 
 export const ImageViewerProvider: React.FC<ImageViewerProviderProps> = ({ children }) => {
   const [images, setImages] = useState<string[]>([]);
