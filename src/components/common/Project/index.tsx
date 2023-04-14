@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Link } from 'gatsby';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+
+import { useImageViewer } from 'src/providers';
 
 import * as S from './styled';
 
@@ -30,6 +30,7 @@ export const Project: React.FC<ProjectProps> = ({
   images = [],
 }) => {
   const IMG_MAX_RENDER_AMOUNT = 4;
+  const { showImage } = useImageViewer();
 
   return (
     <S.ProjectContainer>
@@ -40,9 +41,9 @@ export const Project: React.FC<ProjectProps> = ({
           <S.ProjectIconList>
             {links.map(({ icon, link }, i) => {
               return (
-                <Link key={i} to={link} target="_blank">
+                <a key={i} href={link} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={icon} style={{ fontSize: '3.2rem' }} />
-                </Link>
+                </a>
               );
             })}
           </S.ProjectIconList>
@@ -81,7 +82,12 @@ export const Project: React.FC<ProjectProps> = ({
           const leftAmount = images.length - IMG_MAX_RENDER_AMOUNT;
 
           return (
-            <S.ProjectImageWrapper key={i}>
+            <S.ProjectImageWrapper
+              key={i}
+              onClick={() => {
+                showImage(images, i);
+              }}
+            >
               <S.ProjectImage src={image} />
               {isLastItem && isHaveMoreImages && (
                 <S.ProjectImageLeftAmount>+{leftAmount}</S.ProjectImageLeftAmount>
