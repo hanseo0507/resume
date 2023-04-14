@@ -5,7 +5,7 @@ export const ScrollProgressBarContainer = styled.div`
   left: 0;
   position: fixed;
   width: 100%;
-  height: 0.8rem;
+  height: 0.4rem;
   background-color: #395dff;
   z-index: 9999;
 `;
