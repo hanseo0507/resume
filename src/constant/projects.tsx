@@ -93,13 +93,19 @@ export const PROJECTS: OrganizationProjectsProps[] = [
     startAt: '2022.02',
     projects: [
       {
-        name: '한세 VPN v4',
+        name: '한세 VPN v4 (FE)',
         description: '누적 트래픽 174TB, 재학생부터 교사까지 사용하는 한세 VPN',
         startAt: '2022.02',
         skills: ['TypeScript', 'React.js', 'Monorepo', 'GraphQL', 'Codegen', 'Apollo'],
         results: [
           'JavaScript를 TypeScript로 마이그레이션을 진행했습니다',
           'Storybook 도입으로 컴포넌트를 규격화하고 문서화하였습니다',
+          '약 270명의 사용자들이 사용하며, 서비스 확장을 준비하고 있습니다',
+        ],
+        images: [
+          'https://cdn.hansu.im/projects/hansei-vpn/1.webp',
+          'https://cdn.hansu.im/projects/hansei-vpn/2.webp',
+          'https://cdn.hansu.im/projects/hansei-vpn/3.webp',
         ],
       },
     ],
