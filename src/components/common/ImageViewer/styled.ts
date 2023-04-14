@@ -16,8 +16,10 @@ export const ImageViewerContainer = styled(motion.div)`
 `;
 
 export const Image = styled.img`
-  width: 60%;
-  height: auto;
+  width: auto;
+  max-width: 60%;
+  max-height: 80%;
+
   user-select: none;
   border-radius: 1rem;
 `;

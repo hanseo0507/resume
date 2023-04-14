@@ -37,10 +37,23 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         startAt: '2023.09.28',
         finishAt: '2023.09.30',
         skills: ['TypeScript', 'React.js', 'Recoil', 'Firebase', 'Sentry'],
-        results: [],
+        results: [
+          '3일 내에 개발-배포까지 마무리되는 엄청 촉박한 일정에서 개발했습니다',
+          '짧은 시간 내 백엔드 개발보단 Firebase를 도입했습니다',
+          '공연 입장과 동시에 서비스에 접속하기 때문에, 빠르고 간편한 "번호 인증 로그인"을 선택하여 구현했습니다',
+          '운영 당일 약 5,100회 FE 요청이 있었고, 혹여 발생할 수 있는 에러를 추적하기 위해 Sentry를 도입하고 계속 모니터링을 진행했습니다',
+        ],
         links: [
           { icon: faGlobe, link: 'https://festival.hansei.team' },
           { icon: faGithub, link: 'https://github.com/hansei-team/hansei-team-qr-frontend' },
+        ],
+        images: [
+          'https://cdn.hansu.im/projects/hansei-team-qr/splash.webp',
+          'https://cdn.hansu.im/projects/hansei-team-qr/login.avif',
+          'https://cdn.hansu.im/projects/hansei-team-qr/lottery.webp',
+          'https://cdn.hansu.im/projects/hansei-team-qr/vote-1.webp',
+          'https://cdn.hansu.im/projects/hansei-team-qr/vote-2.gif',
+          'https://cdn.hansu.im/projects/hansei-team-qr/vote-3.webp',
         ],
       },
       {
