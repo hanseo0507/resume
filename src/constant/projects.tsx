@@ -34,8 +34,8 @@ export const PROJECTS: OrganizationProjectsProps[] = [
       {
         name: '한팀 QR',
         description: "교내 축제의 '번호 경품 추첨'과 '실시간 투표'를 위한 웹서비스",
-        startAt: '2023.09.28',
-        finishAt: '2023.09.30',
+        startAt: '2022.09.28',
+        finishAt: '2022.09.30',
         skills: ['TypeScript', 'React.js', 'Recoil', 'Firebase', 'Sentry'],
         results: [
           '3일 내에 개발-배포까지 마무리되는 엄청 촉박한 일정에서 개발했습니다',
@@ -102,6 +102,7 @@ export const PROJECTS: OrganizationProjectsProps[] = [
           'Storybook 도입으로 컴포넌트를 규격화하고 문서화하였습니다',
           '약 270명의 사용자들이 사용하며, 서비스 확장을 준비하고 있습니다',
         ],
+        links: [{ icon: faGlobe, link: 'https://hansei.kr' }],
         images: [
           'https://cdn.hansu.im/projects/hansei-vpn/1.webp',
           'https://cdn.hansu.im/projects/hansei-vpn/2.webp',
@@ -121,10 +122,16 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         startAt: '2022.02.16',
         finishAt: '2022.03.07 (이후 유지보수 진행)',
         skills: ['TypeScript', 'Next.js', 'styled-components'],
-        results: [],
+        results: ['구글 검색을 통해서도 볼 수 있도록 SEO 작업을 했습니다'],
         links: [
           { icon: faGlobe, link: 'https://hsoc.kr' },
           { icon: faGithub, link: 'https://github.com/hansei-hsoc/hsoc-homepage-2022' },
+        ],
+        images: [
+          'https://cdn.hansu.im/projects/hsoc-homepage/1.webp',
+          'https://cdn.hansu.im/projects/hsoc-homepage/2.webp',
+          'https://cdn.hansu.im/projects/hsoc-homepage/3.webp',
+          'https://cdn.hansu.im/projects/hsoc-homepage/4.webp',
         ],
       },
       {
