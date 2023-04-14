@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
@@ -140,14 +142,32 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         startAt: '2022.06',
         finishAt: '2022.11',
         skills: ['TypeScript', 'Yarn PnP(+ Workspaces)', 'React.js', ' NestJS', 'Keycloak'],
-        results: [],
+        results: [
+          '서비스 개발과 함께 서버 운영/관리도 함께 맡았습니다',
+          '서버 네트워크의 여러 보안 이슈들을 개선/해결했습니다',
+          '밝힐 수 없는 이유로 인해 업체 대신 동아리 부원과 함께 맡았습니다',
+          <>
+            이 프로젝트를 진행하며{' '}
+            <a
+              href="https://github.com/import-js/eslint-import-resolver-typescript/pull/169"
+              style={{ color: '#395dff' }}
+            >
+              eslint-import-resolver-typescript
+            </a>{' '}
+            이슈를 발견해 기여했습니다
+          </>,
+        ],
+        images: [
+          'https://cdn.hansu.im/projects/hiscon-ctf/1.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/2.webp',
+        ],
       },
       {
         name: 'HSOC 워게임 사이트/대시보드',
         description: '교내/외 해킹방어대회를 위한 워게임 사이트 및 대시보드 개발/운영',
         startAt: '2021.03',
         finishAt: '2021.11 ',
-        skills: ['TypeScript', 'React.js', 'Redux', 'Express.js', 'Docker API'],
+        skills: ['TypeScript', 'React.js', 'Redux', 'Express.js', 'Docker API', 'Socket.io'],
         results: [],
       },
     ],
