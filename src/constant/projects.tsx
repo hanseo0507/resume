@@ -1,7 +1,7 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-import { OrganizationProjectsProps, ProjectProps } from 'src/components/common';
+import { OrganizationProjectsProps } from 'src/components/common';
 
 export const PROJECTS: OrganizationProjectsProps[] = [
   {
@@ -15,10 +15,20 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         startAt: '2023.03.03',
         finishAt: '2023.03.20',
         skills: ['TypeScript', 'React.js', 'Supabase', 'GraphQL', 'Codegen', 'Apollo'],
-        results: [],
+        results: [
+          '프론트엔드와 데이터베이스 설계 등 전반적인 부분을 담당하였습니다',
+          '모집공고 내용을 하드코딩 대신 DB 수정으로 해결할 수 있도록 구현했습니다',
+          'GraphQL과 Codegen을 도입해 API 로직을 Hook으로 자동생성하여 생산성을 높였습니다',
+        ],
         links: [
           { icon: faGlobe, link: 'https://recruit.hanowl.com' },
           { icon: faGithub, link: 'https://github.com/hanowwl/recruit.hanowl.com' },
+        ],
+        images: [
+          'https://cdn.hansu.im/projects/recruit.hanowl.com/1.webp',
+          'https://cdn.hansu.im/projects/recruit.hanowl.com/2.webp',
+          'https://cdn.hansu.im/projects/recruit.hanowl.com/3.webp',
+          'https://cdn.hansu.im/projects/recruit.hanowl.com/4.webp',
         ],
       },
       {
