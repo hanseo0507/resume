@@ -205,32 +205,58 @@ export const PROJECTS: OrganizationProjectsProps[] = [
     startAt: '2021.03',
     projects: [
       {
-        name: 'Hmm v2',
-        description: '교내 점심시간 음악 신청 서비스',
+        name: 'Hmm v2 (FE)',
+        description: '교내 점심시간 음악 신청 서비스 (개발 진행 중)',
         startAt: '2023.01',
         skills: ['TypeScript', 'Monorepo', 'React.js', 'Next.js', 'Stitches'],
         results: [],
         links: [{ icon: faGithub, link: 'https://github.com/team-comma/hmm-frontend-v2' }],
       },
       {
-        name: '병주고약주고',
-        description: '병든 지구를 위해, 이제는 약을 처방할 시간',
+        name: '병주고약주고 (Full-Stack)',
+        description: '병든 지구를 위해, 이제는 약을 처방할 시간 (2022 STAC 생활부문 수상작)',
         startAt: '2022.07',
         finishAt: '2022.10',
-        skills: ['React Native', 'Mapbox SDK', 'Recoil', 'React-Query'],
-        results: [],
+        skills: ['React Native', 'Mapbox SDK', 'Recoil', 'React-Query', 'NestJS'],
+        results: [
+          <>
+            2022 STAC 개발팀 생활부문에서 <strong>창업진흥원장상(우수상)</strong>을 수상하였습니다
+          </>,
+        ],
+        images: ['https://cdn.hansu.im/projects/kap/1.webp'],
         links: [
           { icon: faGithub, link: 'https://github.com/team-comma/kap-frontend-v2' },
           { icon: faGithub, link: 'https://github.com/team-comma/kap-backend-v2' },
         ],
       },
       {
-        name: '고잉',
-        description: '사회적 약자들을 위한 지도 서비스 (과학기술통신부 장관상 수장작)',
+        name: '고잉 (Full-Stack)',
+        description: '사회적 약자들을 위한 지도 서비스 (제3회 한국코드페어해커톤 수상작)',
         startAt: '2021.10.02',
         finishAt: '2021.10.18',
-        skills: ['TypeScript', 'React Native', 'styled-components', 'Mapbox SDK'],
-        results: [],
+        skills: [
+          'TypeScript',
+          'React Native',
+          'styled-components',
+          'Mapbox SDK',
+          'NestJS',
+          'MongoDB',
+        ],
+        results: [
+          <>
+            제 3회 한국코드페어해커톤 고등부에서 <strong>과학기술정보통신부장관상(금상)</strong>을
+            수상하였습니다
+          </>,
+          'Mapbox API를 사용해 지도 기능을 구현했습니다',
+          '휠체어 사용자를 위한 길을 안내하고 데이터를 최적화하기 위해 사용자의 길찾기 이동 경로를 수집하고, 저장하여 다시 제공하는 기능을 구현하였습니다',
+          '첫 협업으로 git-flow, trunk-flow 같은 Git 전략에 대해 알게 되었습니다 ',
+        ],
+        images: [
+          'https://cdn.hansu.im/projects/going/1.webp',
+          'https://cdn.hansu.im/projects/going/2.avif',
+          'https://cdn.hansu.im/projects/going/3.avif',
+          'https://cdn.hansu.im/projects/going/4.avif',
+        ],
         links: [{ icon: faGithub, link: 'https://github.com/hanseo0507/going' }],
       },
     ],
