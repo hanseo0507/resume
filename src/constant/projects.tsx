@@ -160,6 +160,15 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         images: [
           'https://cdn.hansu.im/projects/hiscon-ctf/1.webp',
           'https://cdn.hansu.im/projects/hiscon-ctf/2.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/3.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/4.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/5.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/6.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/7.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/8.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/9.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/10.webp',
+          'https://cdn.hansu.im/projects/hiscon-ctf/11.webp',
         ],
       },
       {
