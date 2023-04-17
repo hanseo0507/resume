@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faNpm } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 import { OrganizationProjectsProps } from 'src/components/common';
@@ -270,14 +270,31 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         name: 'MY-SCHOOL.INFO (Full-Stack)',
         description: '컴시간 시간표 서비스의 iOS 이용 불편함을 해결하기 위한 서비스',
         startAt: '2020.08',
-        finishAt: '2021.03',
+        finishAt: '2020.08',
         skills: ['JavaScript(ES6)', 'React.js', 'Bootstrap', 'Express.js', 'AWS Amplify'],
-        results: [],
+        results: [
+          '프론트엔드는 AWS Amplify를 사용해 배포하고, 백엔드는 Heroku를 사용해 배포했습니다',
+          <>
+            comcigan-parser 라이브러리를 수정해,
+            <a
+              href="https://github.com/my-school-info/comcigan-parser-edited"
+              style={{ color: '#395dff' }}
+            >
+              comcigan-parser-edited
+            </a>{' '}
+            라이브러리를 배포했습니다
+          </>,
+        ],
         links: [
           {
             icon: faGithub,
             link: 'https://github.com/my-school-info/my-school-info-frontend-v1',
           },
+        ],
+        images: [
+          'https://cdn.hansu.im/projects/my-school-info/1.webp',
+          'https://cdn.hansu.im/projects/my-school-info/2.webp',
+          'https://cdn.hansu.im/projects/my-school-info/3.webp',
         ],
       },
       {
@@ -286,8 +303,15 @@ export const PROJECTS: OrganizationProjectsProps[] = [
         startAt: '2021.03',
         finishAt: '2021.03',
         skills: ['TypeScript', 'Axios'],
-        results: [],
+        results: [
+          '대부분의 나이스 오픈 API가 JavaScript 라이브러리라 직접 TypeScript 라이브러리를 만들었습니다',
+          '4개의 스타와 누적 다운로드 약 5,600회를 기록했습니다',
+        ],
         links: [
+          {
+            icon: faNpm,
+            link: 'https://www.npmjs.com/package/@my-school.info/neis-api',
+          },
           {
             icon: faGithub,
             link: 'https://github.com/my-school.info',
@@ -304,22 +328,33 @@ export const PROJECTS: OrganizationProjectsProps[] = [
       {
         name: '@hanseo0507/react-toast',
         description: 'React 토스트 라이브러리',
-        startAt: '',
+        startAt: '2022.03',
         skills: ['TypeScript', 'React.js', 'Emotion', 'Framer Motion'],
-        results: [],
+        results: [
+          '매번 react-toastify 라이브러리만 사용하다 새로운 레이아웃의 토스트를 사용하고 싶어 개발하게 되었습니다',
+          '첫 릴리즈 이후 일주일만에 스타 20개를 기록했습니다',
+        ],
         links: [
           {
             icon: faGithub,
             link: 'https://github.com/hanseo0507/react-toast',
           },
         ],
+        images: [
+          'https://cdn.hansu.im/projects/react-toast/1.webp',
+          'https://cdn.hansu.im/projects/react-toast/2.webp',
+        ],
       },
       {
         name: '한세 시간표',
         description: '코로나 시대의 편리한 줌 수업 참여를 위한 웹서비스',
-        startAt: '',
+        startAt: '2021.03',
+        finishAt: '2021.03',
         skills: ['TypeScript', 'React.js', 'styled-components', 'Deeplink'],
-        results: [],
+        results: [
+          '평소 1분정도 걸리던 줌 수업 참여를 10~30초로 단축하였습니다',
+          '줌 딥링크를 사용해 버튼 클릭만으로 줌을 실행할 수 있도록 구현했습니다',
+        ],
         links: [
           {
             icon: faGlobe,
@@ -330,12 +365,16 @@ export const PROJECTS: OrganizationProjectsProps[] = [
             link: 'https://github.com/hanseo0507/hansei-timetable',
           },
         ],
+        images: [
+          'https://cdn.hansu.im/projects/hansei-timetable/1.webp',
+          'https://cdn.hansu.im/projects/hansei-timetable/2.webp',
+        ],
       },
       {
         name: 'What Is My IP?',
         description: '본인이 사용 중인 IP와 관련 정보를 안내하는 웹서비스',
-        startAt: '',
-        finishAt: '',
+        startAt: '2020.09',
+        finishAt: '2020.09',
         skills: ['JavaScript(ES6)', 'React.js'],
         results: [],
         links: [
@@ -348,6 +387,7 @@ export const PROJECTS: OrganizationProjectsProps[] = [
             link: 'https://github.com/hanseo0507/What-Is-My-IP',
           },
         ],
+        images: ['https://cdn.hansu.im/projects/what-is-my-ip/1.webp'],
       },
     ],
   },
