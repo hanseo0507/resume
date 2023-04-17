@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import React, { useContext, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -36,15 +36,34 @@ export const ImageViewerProvider: React.FC<ImageViewerProviderProps> = ({ childr
     setCurrentIndex(startAt);
   };
 
-  const close = () => setShow(false);
+  const close = useCallback(() => {
+    setShow(false);
+  }, []);
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     if (currentIndex < images.length - 1) setCurrentIndex((prev) => prev + 1);
-  };
+  }, [currentIndex, images]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     if (currentIndex > 0) setCurrentIndex((prev) => prev - 1);
-  };
+  }, [currentIndex]);
+
+  const handleOnKeyDown = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === 'Escape') return close();
+      else if (event.key === 'ArrowRight') return nextImage();
+      else if (event.key === 'ArrowLeft') return prevImage();
+    },
+    [close, nextImage, prevImage]
+  );
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleOnKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleOnKeyDown);
+    };
+  }, [handleOnKeyDown]);
 
   return (
     <ImageViewerContext.Provider value={{ images, showImage, close, nextImage, prevImage }}>
